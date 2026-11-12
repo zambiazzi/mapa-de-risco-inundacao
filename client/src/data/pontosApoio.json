@@ -1,0 +1,111 @@
+[
+  {
+    "id": "p01",
+    "nome": "Defesa Civil de Herval d'Oeste",
+    "tipo": "defesa_civil",
+    "endereco": "Rua Nereu Ramos, 389 – Centro, Herval d'Oeste – SC",
+    "telefone": "(49) 3554-0922",
+    "lat": -27.171378,
+    "lng": -51.496699,
+    "localAproximado": true
+  },
+  {
+    "id": "p02",
+    "nome": "Defesa Civil de Joaçaba (COMPDEC)",
+    "tipo": "defesa_civil",
+    "endereco": "Rua Frei Edgar, 89, sala 4 – Centro, Joaçaba – SC",
+    "lat": -27.176817,
+    "lng": -51.507386,
+    "localAproximado": true
+  },
+  {
+    "id": "p03",
+    "nome": "Defesa Civil de SC – Coordenadoria Regional",
+    "tipo": "defesa_civil",
+    "endereco": "Rua Armindo Raimundo Heberle, 315 – Vila Remor, Joaçaba – SC",
+    "lat": -27.176896,
+    "lng": -51.539332,
+    "localAproximado": false
+  },
+  {
+    "id": "p04",
+    "nome": "Escola Prof. Adolfo Becker",
+    "tipo": "escola",
+    "endereco": "Rua Minas Gerais, 177 – São Vicente, Herval d'Oeste – SC",
+    "lat": -27.183605,
+    "lng": -51.499212,
+    "localAproximado": true
+  },
+  {
+    "id": "p05",
+    "nome": "Escola Nossa Senhora de Fátima",
+    "tipo": "escola",
+    "endereco": "Rua Manoel Ferreira, 70 – Herval d'Oeste – SC",
+    "lat": -27.177096,
+    "lng": -51.495561,
+    "localAproximado": true
+  },
+  {
+    "id": "p06",
+    "nome": "Escola Cruz e Sousa",
+    "tipo": "escola",
+    "endereco": "Rua Primeiro de Janeiro, 283 – São Jorge, Herval d'Oeste – SC",
+    "lat": -27.173646,
+    "lng": -51.486643,
+    "localAproximado": true
+  },
+  {
+    "id": "p07",
+    "nome": "Centro Municipal de Educação Pequeno Príncipe",
+    "tipo": "escola",
+    "endereco": "Rua Senador Euzébio, 240 – Vila Militar, Herval d'Oeste – SC",
+    "lat": -27.170781,
+    "lng": -51.492676,
+    "localAproximado": true
+  },
+  {
+    "id": "p08",
+    "nome": "EEB Prof. Odilon Fernandes",
+    "tipo": "escola",
+    "endereco": "Rua Francisco Porto Moreira, 216 – Santo Antônio, Herval d'Oeste – SC",
+    "lat": -27.168593,
+    "lng": -51.481262,
+    "localAproximado": true
+  },
+  {
+    "id": "p09",
+    "nome": "CMEI Valdete Souza Nodari",
+    "tipo": "escola",
+    "endereco": "Rua Itororó, 201 – Nossa Senhora Aparecida, Herval d'Oeste – SC",
+    "lat": -27.188715,
+    "lng": -51.502535,
+    "localAproximado": true
+  },
+  {
+    "id": "p10",
+    "nome": "CMEI Tio Zezinho",
+    "tipo": "escola",
+    "endereco": "Travessa Sarandi, 49 – Santo Antônio, Herval d'Oeste – SC",
+    "lat": -27.166725,
+    "lng": -51.487481,
+    "localAproximado": true
+  },
+  {
+    "id": "p11",
+    "nome": "EEB Dep. Nelson Pedrini",
+    "tipo": "escola",
+    "endereco": "Rua Pará, 76 – Santa Tereza, Joaçaba – SC",
+    "lat": -27.166971,
+    "lng": -51.496744,
+    "localAproximado": true
+  },
+  {
+    "id": "p12",
+    "nome": "Centro Educacional Frei Bruno",
+    "tipo": "escola",
+    "endereco": "Travessa Cesário Silva, 284 – Santa Tereza, Joaçaba – SC",
+    "lat": -27.164072,
+    "lng": -51.504194,
+    "localAproximado": true
+  }
+]

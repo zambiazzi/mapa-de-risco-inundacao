@@ -1,0 +1,324 @@
+[
+  {
+    "id": "a01",
+    "nome": "Área 01 – trecho norte, margem oeste do Rio do Peixe",
+    "risco": "medio",
+    "coordenadas": [
+      [
+        -27.152,
+        -51.5038
+      ],
+      [
+        -27.15771,
+        -51.50294
+      ],
+      [
+        -27.15811,
+        -51.50514
+      ],
+      [
+        -27.1516,
+        -51.506
+      ]
+    ]
+  },
+  {
+    "id": "a02",
+    "nome": "Área 02 – trecho norte-centro, margem oeste do Rio do Peixe",
+    "risco": "alto",
+    "coordenadas": [
+      [
+        -27.15771,
+        -51.50294
+      ],
+      [
+        -27.16343,
+        -51.50209
+      ],
+      [
+        -27.16383,
+        -51.50489
+      ],
+      [
+        -27.15731,
+        -51.50574
+      ]
+    ]
+  },
+  {
+    "id": "a03",
+    "nome": "Área 03 – trecho centro-norte, margem oeste do Rio do Peixe",
+    "risco": "alto",
+    "coordenadas": [
+      [
+        -27.16343,
+        -51.50209
+      ],
+      [
+        -27.16914,
+        -51.50123
+      ],
+      [
+        -27.16954,
+        -51.50403
+      ],
+      [
+        -27.16303,
+        -51.50489
+      ]
+    ]
+  },
+  {
+    "id": "a04",
+    "nome": "Área 04 – trecho centro, margem oeste do Rio do Peixe",
+    "risco": "alto",
+    "coordenadas": [
+      [
+        -27.16914,
+        -51.50123
+      ],
+      [
+        -27.17486,
+        -51.50037
+      ],
+      [
+        -27.17526,
+        -51.50317
+      ],
+      [
+        -27.16874,
+        -51.50403
+      ]
+    ]
+  },
+  {
+    "id": "a05",
+    "nome": "Área 05 – trecho centro-sul, margem oeste do Rio do Peixe",
+    "risco": "medio",
+    "coordenadas": [
+      [
+        -27.17486,
+        -51.50037
+      ],
+      [
+        -27.18057,
+        -51.49951
+      ],
+      [
+        -27.18097,
+        -51.50171
+      ],
+      [
+        -27.17446,
+        -51.50257
+      ]
+    ]
+  },
+  {
+    "id": "a06",
+    "nome": "Área 06 – trecho sul-centro, margem oeste do Rio do Peixe",
+    "risco": "alto",
+    "coordenadas": [
+      [
+        -27.18057,
+        -51.49951
+      ],
+      [
+        -27.18629,
+        -51.49866
+      ],
+      [
+        -27.18669,
+        -51.50146
+      ],
+      [
+        -27.18017,
+        -51.50231
+      ]
+    ]
+  },
+  {
+    "id": "a07",
+    "nome": "Área 07 – trecho sul, margem oeste do Rio do Peixe",
+    "risco": "baixo",
+    "coordenadas": [
+      [
+        -27.18629,
+        -51.49866
+      ],
+      [
+        -27.192,
+        -51.4978
+      ],
+      [
+        -27.1924,
+        -51.4994
+      ],
+      [
+        -27.18589,
+        -51.50026
+      ]
+    ]
+  },
+  {
+    "id": "a08",
+    "nome": "Área 08 – trecho norte, margem leste do Rio do Peixe",
+    "risco": "baixo",
+    "coordenadas": [
+      [
+        -27.152,
+        -51.5032
+      ],
+      [
+        -27.15771,
+        -51.50234
+      ],
+      [
+        -27.15731,
+        -51.50074
+      ],
+      [
+        -27.1524,
+        -51.5016
+      ]
+    ]
+  },
+  {
+    "id": "a09",
+    "nome": "Área 09 – trecho norte-centro, margem leste do Rio do Peixe",
+    "risco": "medio",
+    "coordenadas": [
+      [
+        -27.15771,
+        -51.50234
+      ],
+      [
+        -27.16343,
+        -51.50149
+      ],
+      [
+        -27.16303,
+        -51.49929
+      ],
+      [
+        -27.15811,
+        -51.50014
+      ]
+    ]
+  },
+  {
+    "id": "a10",
+    "nome": "Área 10 – trecho centro-norte, margem leste do Rio do Peixe",
+    "risco": "alto",
+    "coordenadas": [
+      [
+        -27.16343,
+        -51.50149
+      ],
+      [
+        -27.16914,
+        -51.50063
+      ],
+      [
+        -27.16874,
+        -51.49783
+      ],
+      [
+        -27.16383,
+        -51.49869
+      ]
+    ]
+  },
+  {
+    "id": "a11",
+    "nome": "Área 11 – trecho centro, margem leste do Rio do Peixe",
+    "risco": "medio",
+    "coordenadas": [
+      [
+        -27.16914,
+        -51.50063
+      ],
+      [
+        -27.17486,
+        -51.49977
+      ],
+      [
+        -27.17446,
+        -51.49757
+      ],
+      [
+        -27.16954,
+        -51.49843
+      ]
+    ]
+  },
+  {
+    "id": "a12",
+    "nome": "Área 12 – trecho centro-sul, margem leste do Rio do Peixe",
+    "risco": "alto",
+    "coordenadas": [
+      [
+        -27.17486,
+        -51.49977
+      ],
+      [
+        -27.18057,
+        -51.49891
+      ],
+      [
+        -27.18017,
+        -51.49611
+      ],
+      [
+        -27.17526,
+        -51.49697
+      ]
+    ]
+  },
+  {
+    "id": "a13",
+    "nome": "Área 13 – trecho sul-centro, margem leste do Rio do Peixe",
+    "risco": "medio",
+    "coordenadas": [
+      [
+        -27.18057,
+        -51.49891
+      ],
+      [
+        -27.18629,
+        -51.49806
+      ],
+      [
+        -27.18589,
+        -51.49586
+      ],
+      [
+        -27.18097,
+        -51.49671
+      ]
+    ]
+  },
+  {
+    "id": "a14",
+    "nome": "Área 14 – trecho sul, margem leste do Rio do Peixe",
+    "risco": "baixo",
+    "coordenadas": [
+      [
+        -27.18629,
+        -51.49806
+      ],
+      [
+        -27.192,
+        -51.4972
+      ],
+      [
+        -27.1916,
+        -51.4956
+      ],
+      [
+        -27.18669,
+        -51.49646
+      ]
+    ]
+  }
+]
