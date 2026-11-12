@@ -1,0 +1,147 @@
+:root {
+  --texto: #1a1a1a;
+  --fundo: #ffffff;
+  --borda: #d0d0d0;
+  --ligar: #c0392b;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+  line-height: 1.4;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+/* RF07 — faixa de estado */
+.faixa-wrapper { padding-top: env(safe-area-inset-top); }
+.faixa {
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  color: #1a1a1a;
+  text-align: center;
+}
+.faixa-carregando { background: #e0e0e0; }
+.faixa-estado {
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.faixa-aviso {
+  margin-top: 0.25rem;
+  font-weight: 700;
+}
+/* Avisos da Defesa Civil SC (RF05) */
+.avisos {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 30vh;
+  overflow-y: auto;
+  border-bottom: 1px solid var(--borda);
+}
+.aviso {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  background: #fff8e1;
+  border-left: 6px solid #F2C94C;
+}
+.aviso + .aviso { border-top: 1px solid var(--borda); }
+.aviso-alerta { background: #fdecea; border-left-color: #EB5757; }
+.aviso-selo { font-weight: 800; text-transform: uppercase; font-size: 0.8rem; }
+.aviso a { color: var(--texto); font-weight: 600; }
+.aviso small { color: #555; }
+
+.mapa { flex: 1; min-height: 0; position: relative; }
+.mapa-container { height: 100%; width: 100%; }
+
+/* Marcadores dos pontos de apoio */
+.marcador {
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+.marcador span { font-size: 22px; line-height: 1; }
+
+.leaflet-popup-content {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.popup-tipo { text-transform: uppercase; font-weight: 700; color: #555; }
+.popup-aviso { color: #8a5a00; }
+.popup-acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+.link-tel { background: #c0392b !important; }
+.link-rota {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background: #2f80ed;
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.legenda i {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3px;
+  vertical-align: -2px;
+  opacity: 0.8;
+}
+
+/* RNF01 — botões grandes */
+.acoes {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--borda);
+  background: var(--fundo);
+}
+.botao-grande {
+  min-height: 56px;
+  min-width: 56px;
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--texto);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.botao-ligar {
+  flex: 1;
+  background: var(--ligar);
+  border-color: var(--ligar);
+  color: #fff;
+}
+.botao-grande:focus-visible { outline: 3px solid #2f80ed; outline-offset: 2px; }
