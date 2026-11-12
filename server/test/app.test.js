@@ -104,4 +104,17 @@ describe('/api/status', () => {
     const body = await (await ctx.get('/api/status')).json();
     expect(body).toMatchObject({ avisos: [aviso], avisosDesatualizados: true });
   });
+
+  it('atualiza sob demanda na primeira requisição e respeita o intervalo', async () => {
+    const lerNivel = vi.fn(async () => ({ nivelCm: 650, dataHora: 'x' }));
+    const { atualizarSeVencido, estado } = criarAtualizador({ lerNivel, lerAvisos: async () => [], cotas: COTAS });
+    ctx = await subir(
+      criarApp({ estado, cotas: COTAS, antesDoStatus: () => atualizarSeVencido(15 * 60 * 1000) })
+    );
+    const [a, b] = await Promise.all([ctx.get('/api/status'), ctx.get('/api/status')]);
+    expect(a.status).toBe(200);
+    expect(b.status).toBe(200);
+    await ctx.get('/api/status');
+    expect(lerNivel).toHaveBeenCalledTimes(1);
+  });
 });

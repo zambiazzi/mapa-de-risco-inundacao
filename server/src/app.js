@@ -7,6 +7,8 @@ import { salvar, obter } from './services/cache.js';
 // a falha de uma fonte não congela a outra. Em falha, mantém a última leitura válida [DOC].
 export function criarAtualizador({ lerNivel, lerAvisos, cotas }) {
   const estado = { desatualizado: true, avisosDesatualizados: true };
+  let ultimaAtualizacao = 0;
+  let emAndamento = null;
 
   async function atualizarNivel() {
     try {
@@ -29,16 +31,29 @@ export function criarAtualizador({ lerNivel, lerAvisos, cotas }) {
     }
   }
 
-  const atualizar = () => Promise.all([atualizarNivel(), atualizarAvisos()]);
+  const atualizar = () => {
+    emAndamento ??= Promise.all([atualizarNivel(), atualizarAvisos()]).finally(() => {
+      ultimaAtualizacao = Date.now();
+      emAndamento = null;
+    });
+    return emAndamento;
+  };
 
-  return { atualizar, estado };
+  // Atualização sob demanda: em ambiente serverless (Vercel) não há processo
+  // contínuo para um setInterval, então a leitura é refeita na requisição
+  // quando a última tem mais de `intervaloMs`.
+  const atualizarSeVencido = (intervaloMs) =>
+    Date.now() - ultimaAtualizacao >= intervaloMs ? atualizar() : Promise.resolve();
+
+  return { atualizar, atualizarSeVencido, estado };
 }
 
-export function criarApp({ estado, cotas }) {
+export function criarApp({ estado, cotas, antesDoStatus = async () => {} }) {
   const app = express();
   app.use(cors());
 
-  app.get('/api/status', (_req, res) => {
+  app.get('/api/status', async (_req, res) => {
+    await antesDoStatus();
     const nivel = obter('nivel');
     const avisos = {
       avisos: obter('avisos')?.lista ?? [],
