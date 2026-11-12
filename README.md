@@ -2,6 +2,8 @@
 
 App web (PWA) para a população acompanhar o risco de enchente do Rio do Peixe.
 
+<img width="1463" height="761" alt="Screenshot 2026-11-12 at 09 23 35" src="https://github.com/user-attachments/assets/e0e252af-b191-4a46-9fc5-2b5660d1b9e0" />
+
 ## O que faz
 
 - Mostra no mapa as **áreas de risco de inundação**, classificadas em risco baixo, médio e alto
