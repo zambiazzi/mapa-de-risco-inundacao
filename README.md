@@ -43,3 +43,7 @@ O projeto usa [Vercel Services](https://vercel.com/docs/services): `client` (Vit
 ```bash
 npm test
 ```
+
+## Licença
+
+[MIT](LICENSE)

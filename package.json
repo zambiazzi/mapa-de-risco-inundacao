@@ -2,6 +2,7 @@
   "name": "mapa-risco-inundacao",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "Mapa de risco de inundação — Herval d'Oeste e Joaçaba (SC)",
   "workspaces": ["client", "server"],
   "scripts": {
