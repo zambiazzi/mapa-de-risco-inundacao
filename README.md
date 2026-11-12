@@ -30,14 +30,6 @@ npm run dev
 
 Por padrão o nível do rio é **simulado** (`ANA_SIMULADO=true` em `server/.env`). Para usar os dados reais da ANA, preencha `COD_ESTACAO_ANA` e defina `ANA_SIMULADO=false`.
 
-## Deploy na Vercel
-
-O projeto usa [Vercel Services](https://vercel.com/docs/services): `client` (Vite) e `server` (Express) no mesmo projeto, configurados em `vercel.json`. Rotas `/api/*` vão para o server e o resto para o client.
-
-1. Importe o repositório na Vercel (raiz do projeto como *Root Directory*)
-2. Configure as variáveis de ambiente de `server/.env.example` no projeto
-3. Faça o deploy
-
 ## Testes
 
 ```bash
